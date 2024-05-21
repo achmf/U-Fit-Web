@@ -1,0 +1,152 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure body doesn't extend beyond viewport */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Mobile Dropdown Menu */
+  #mobile-menu {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease-in-out; /* Add transition effect */
+  }
+  
+  
+  /* Adjust header padding and margins */
+  header {
+    padding: 0 20px; /* Adjust as needed */
+  }
+  
+  /* Adjust main content section width */
+  section {
+    max-width: 100%; /* Ensure sections don't extend beyond viewport width */
+    overflow-x: hidden; /* Hide any horizontal overflow */
+  }
+  
+  /* Ensure modal fits within viewport */
+  .modal-content {
+    max-width: 80%; /* Adjust as needed */
+  }
+  
+  
+  /* Google Fonts */
+  .anton-regular {
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+    .montserrat-regular {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  
+  /* Image Container */
+  .image-container {
+      position: relative;
+      width: 95%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+  
+  /* Trainings Image Container */
+  .image-container-training {
+    position: relative;
+    width: 100%;
+    height: 24.5%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  
+  /* Membership Modal */
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  /* Custom CSS for article cards */
+  #article .bg-white {
+    border: 1px solid #ddd; /* Add a subtle border */
+  }
+  
+  #article .rounded-t-lg {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  #article .h-56 {
+    overflow: hidden; /* Hide overflow to keep the image within its container */
+  }
+  
+  #article img {
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  #article img:hover {
+    transform: scale(1.05); /* Enlarge the image slightly on hover */
+  }
+  
+  #article h3 {
+    font-size: 1.25rem; /* Adjust heading font size */
+  }
+  
+  #article p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+  
+  #article a {
+    display: inline-block;
+    background-color: #ddd;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  #article a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  

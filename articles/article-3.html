@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 3</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="article.css">
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Include AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <!-- Navbar for Mobile Devices -->
+    <header class="bg-black text-white py-4 md:hidden"> <!-- Hide on medium screens and larger -->
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- U-Fit Logo -->
+            <div>
+                <a href="/public/index.html" class="px-6 text-2xl font-bold">U-FIT</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden bg-black text-white mt-2">
+            <ul class="flex flex-col items-center text-right font-semibold">
+                <li class="w-full"><a href="#about" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">About</a></li>
+                <li class="w-full"><a href="#membership" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Membership</a></li>
+                <li class="w-full"><a href="#training" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Training</a></li>
+                <li class="w-full"><a href="#article" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Article</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Original Navbar (Hidden on Small Screens) -->
+    <header class="bg-black text-white py-4 hidden md:block"> <!-- Hide on small screens -->
+        <div class="container mx-auto px-4 flex items-center">
+            <!-- U-Fit Logo -->
+            <div>
+                <a href="/public/index.html" class="px-6 text-2xl font-bold">U-FIT</a>
+            </div>
+        </div>
+    </header>    
+
+    <main>
+      <div class="lg:h-screen w-full bg-black p-10">
+        <div class="h-full flex flex-col lg:flex-row-reverse">
+            <!-- Header -->
+            <div class="w-full lg:w-1/2 bg-black text-white flex flex-col justify-center items-center">
+                <div>
+                    <h1 class="anton-regular text-center uppercase mb-8">
+                        <span class="block text-6xl lg:text-7xl">5 Healthy Snack Ideas for Fitness Enthusiasts</span>
+                    </h1>
+                </div>
+                <div class="px-10">
+                    <p class="text-justify text-gray-300">
+                      Offers a concise guide to nutritious snack options tailored for individuals passionate about fitness. It presents five practical and flavorful suggestions that align with fitness goals, providing convenient choices to fuel workouts, support recovery, and maintain overall health and well-being.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 bg-black flex justify-center items-center mt-8 lg:mt-0">
+                <img src="/assets/images/article-3.svg" alt="Placeholder Image" class="w-full" />
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+<!-- Article Paragraphs -->
+<div class="bg-black text-white h-auto lg:grid grid-cols-2 p-5">
+    <!-- Left Div -->
+    <div class="px-10">
+      <div class="grid gap-6">
+        <!-- Item 1 -->
+        <div class="flex items-start">
+          <div class="font-semibold bebas-neue text-6xl h-12 w-12 mr-6">01</div>
+          <div>
+            <h2 class="font-semibold bebas-neue text-2xl">Greek Yogurt with Berries</h2>
+            <p class="mt-2 text-gray-300">Greek yogurt is packed with protein, which helps in muscle repair and growth. Pair it with fresh berries like strawberries, blueberries, or raspberries for a dose of antioxidants and fiber. This snack is not only delicious but also helps in keeping you full for longer periods.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="flex items-start">
+          <div class="font-semibold bebas-neue text-6xl h-12 w-12 mr-6">02</div>
+          <div>
+            <h2 class="font-semibold bebas-neue text-2xl">Vegetable Sticks with Hummus</h2>
+            <p class="mt-2 text-gray-300">Cut up some crunchy vegetables like carrots, celery, and bell peppers and dip them into a serving of hummus. Hummus is made from chickpeas, which are high in protein and fiber, making it a filling and wholesome option for snacking. Plus, the variety of colorful veggies adds essential vitamins and minerals to your diet.</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="flex items-start">
+          <div class="font-semibold bebas-neue text-6xl h-12 w-12 mr-6">03</div>
+          <div>
+            <h2 class="font-semibold bebas-neue text-2xl">Hard-Boiled Eggs</h2>
+            <p class="mt-2 text-gray-300">Hard-boiled eggs are a convenient and portable snack that's rich in protein and essential nutrients like vitamin D and B vitamins. Keep a batch of hard-boiled eggs in the fridge for quick and easy snacking whenever hunger strikes. Sprinkle a pinch of salt and pepper for added flavor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right Div -->
+    <div class="py-5 px-10">
+      <div class="grid gap-6">
+        <!-- Item 4 -->
+        <div class="flex items-start">
+          <div class="font-semibold bebas-neue text-6xl h-12 w-12 mr-6">04</div>
+          <div>
+            <h2 class="font-semibold bebas-neue text-2xl">Nut Butter with Apple Slices</h2>
+            <p class="mt-2 text-gray-300">Spread some almond, peanut, or cashew butter on apple slices for a satisfying combination of protein, healthy fats, and carbohydrates. The natural sweetness of the apple complements the rich nutty flavor, making it a tasty and nutritious snack to curb cravings.</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="flex items-start">
+          <div class="font-semibold bebas-neue text-6xl h-12 w-12 mr-6">05</div>
+          <div>
+            <h2 class="font-semibold bebas-neue text-2xl">Trail Mix</h2>
+            <p class="mt-2 text-gray-300">Make your own trail mix by combining nuts, seeds, and dried fruits for a nutritious on-the-go snack. Nuts like almonds, walnuts, and pistachios provide healthy fats and protein, while seeds such as pumpkin or sunflower seeds add crunch and additional nutrients. Dried fruits like raisins, cranberries, or apricots offer natural sweetness without added sugars.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Article Paragraphs -->
+
+    </main>
+
+    <!-- Include AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 2</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="article.css">
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Include AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <!-- Navbar for Mobile Devices -->
+    <header class="bg-black text-white py-4 md:hidden"> <!-- Hide on medium screens and larger -->
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- U-Fit Logo -->
+            <div>
+                <a href="/public/index.html" class="px-6 text-2xl font-bold">U-FIT</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="block md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu (Initially Hidden) -->
+        <div id="mobile-menu" class="hidden bg-black text-white mt-2">
+            <ul class="flex flex-col items-center text-right font-semibold">
+                <li class="w-full"><a href="#about" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">About</a></li>
+                <li class="w-full"><a href="#membership" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Membership</a></li>
+                <li class="w-full"><a href="#training" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Training</a></li>
+                <li class="w-full"><a href="#article" class="block py-2 px-4 hover:bg-white hover:text-black transition-all duration-300">Article</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Original Navbar (Hidden on Small Screens) -->
+    <header class="bg-black text-white py-4 hidden md:block"> <!-- Hide on small screens -->
+        <div class="container mx-auto px-4 flex items-center">
+            <!-- U-Fit Logo -->
+            <div>
+                <a href="/public/index.html" class="px-6 text-2xl font-bold">U-FIT</a>
+            </div>
+        </div>
+    </header>    
+
+    <main>
+      <div class="lg:h-screen w-full bg-black px-10">
+        <div class="h-full flex flex-col lg:flex-row-reverse">
+            <!-- Header -->
+            <div class="w-full lg:w-1/2 bg-black text-white flex flex-col justify-center items-center">
+                <div>
+                    <h1 class="anton-regular text-center uppercase mb-8">
+                        <span class="block text-6xl lg:text-7xl">The Importance of Stretching Before and After Exercise</span>
+                    </h1>
+                </div>
+                <div class="px-10">
+                    <p class="text-justify text-gray-300">
+                      Stretching before and after exercise enhances flexibility, reduces the risk of injury, and improves blood flow to muscles. Pre-exercise stretching prepares the body for activity, while post-exercise stretching aids in muscle recovery and reduces soreness, promoting overall better performance and well-being.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Image -->
+            <div class="w-full lg:w-1/2 bg-black flex justify-center items-center mt-8 lg:mt-0">
+                <img src="/assets/images/article-2.svg" alt="Placeholder Image" class="w-full" />
+            </div>
+        </div>
+    </div>
+    
+<!-- Article Paragraphs -->
+<div class="bg-black text-white h-auto py-5 pb-10">
+    <div class="px-10">
+      <div class="grid gap-6">
+        <!-- Item 1 -->
+        <div class="flex items-start">
+          <div>
+            <p class="mt-2 text-gray-300">Stretching before and after exercise is crucial for maintaining optimal physical health and performance. Pre-exercise stretching helps to warm up the muscles, increasing their elasticity and range of motion. This preparation reduces the risk of injury by ensuring that muscles and joints are ready for the stresses of physical activity. Additionally, stretching boosts blood flow, delivering more oxygen and nutrients to muscles, which can enhance performance and endurance during a workout.</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="flex items-start">
+          <div>
+            <p class="mt-2 text-gray-300">Post-exercise stretching, on the other hand, plays a vital role in the recovery process. It helps to gradually lower the heart rate and prevent muscle stiffness and soreness by reducing lactic acid buildup. Stretching after exercise also aids in maintaining flexibility and improving overall muscle function. By incorporating both pre- and post-exercise stretching into your fitness routine, you can enhance your athletic performance, decrease the likelihood of injuries, and promote faster recovery, leading to a more effective and sustainable workout regimen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Article Paragraphs -->
+
+    </main>
+
+    <!-- Include AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>
